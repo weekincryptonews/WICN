@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+    font-size: 2rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    position: static;
+    transform: none;
+    padding-top: 1rem;
+}
+
+.header-image-container {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    position: relative;
+    display: block;
+    transition: opacity 0.2s;
+}
+
+.header-image-container:hover {
+    opacity: 0.9;
+}
+
+.header-image {
+    height: 180px;  /* 放大三倍 */
+    width: auto;
+    margin-top: 1rem;  /* 增加与标题的间距 */
+}
+
+.subscribe-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.subscribe-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.subscribe-btn:hover {
+    background-color: #0056b3;
+}
+
+.twitter-btn {
+    position: absolute;
+    right: 140px;
+    top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #1da1f2;
+    color: white;
+    transition: background-color 0.2s;
+    z-index: 1;
+}
+
+.twitter-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.twitter-btn:hover {
+    background-color: #1991db;
+}
+
+.email-link {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Layout Styles */
+.container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.main-content {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: #1a1a1a;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-item,
+.analysis-item,
+.project-item,
+.event-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h3 {
+    margin-top: 0;
+    color: #1a1a1a;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .container {
+        flex-direction: column;
+        padding: 0 0.5rem;
+    }
+    
+    .sidebar {
+        min-width: auto;
+    }
+}
