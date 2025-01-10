@@ -33,6 +33,15 @@ header {
     position: relative;
 }
 
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
 header h1 {
     margin: 0;
     font-size: 2.5rem;
@@ -63,18 +72,21 @@ header h1 {
 }
 
 .subscribe-btn {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    position: static;
+    margin: 0;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
 }
 
 .subscribe-btn {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.875rem;
     cursor: pointer;
     transition: background-color 0.2s;
 }
@@ -84,9 +96,7 @@ header h1 {
 }
 
 .twitter-btn {
-    position: absolute;
-    right: 140px;
-    top: 1rem;
+    position: static;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +107,7 @@ header h1 {
     color: white;
     transition: background-color 0.2s;
     z-index: 1;
+    margin: 0;
 }
 
 .twitter-btn svg {
